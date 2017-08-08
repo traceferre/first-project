@@ -37,4 +37,11 @@ public class HelloWorldController {
 		return "helloworld/sum-result";
 	}
 	
+	@PostMapping("subtracter")
+	public String subtractTwoNumbers(@RequestParam(name="biggerNumber") int first, @RequestParam(name="smallerNumber") double second, Model model) {
+		model.addAttribute("difference", first - second);
+		return "helloworld/subtract-result";
+	}
+	
+	
 }
