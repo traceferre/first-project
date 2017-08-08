@@ -23,6 +23,16 @@ public class HelloWorldController {
 		return "helloworld/index";
 	}
 	
+	@GetMapping("adder")
+	public String adder() {
+		return "helloworld/adder-form";
+	}
+	
+	@GetMapping("subtracter")
+	public String subtracter() {
+		return "helloworld/subtracter-form";
+	}
+	
 	@GetMapping("message")
 	public ModelAndView message(@RequestParam(required=false, defaultValue="«silence»") String message) {
 		ModelAndView mv = new ModelAndView("helloworld/message");
