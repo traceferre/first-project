@@ -40,6 +40,8 @@ public class HelloWorldController {
 		mv.addObject("message", message);
 		return mv;
 	}
+	
+	
 	 
 	@PostMapping("adder")
 	public String addTwoNumbers(@RequestParam(name="left") int first, @RequestParam(name="right") double second, Model model) {
