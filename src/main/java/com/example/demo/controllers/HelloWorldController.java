@@ -47,13 +47,6 @@ public class HelloWorldController {
 		return mv;
 	}
 	
-	@PostMapping("adder")
-	public String addTwoNumbers(@RequestParam(name="left") int first, 
-			@RequestParam(name="right") double second, Model model) {
-		
-		Adder adder = new Adder(first, second);
-		model.addAttribute("sum", adder.calculate());
-		return "helloworld/sum-result";
-	}
+	
 	
 }
