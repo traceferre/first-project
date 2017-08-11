@@ -1,21 +1,19 @@
 <!doctype html>
 <html>
   <head>
-    <title>{{ title }}</title>
+    <title>Insert clever title here</title>
     <link rel="stylesheet" href="/site.css">
   </head>
   <body>
   <a href="/">Back home</a>
-    <h1>Houston, we have a message!</h1>
+    <h1>Mixed Message Time!</h1>
     <p>
       <b>Message:</b>
-      {{ message }}
+      {{ output }}
     </p>
     {{> helloworld/message-form }}
-    <br>
-    <img alt="person yelling" src="https://media.giphy.com/media/3SvP3zalmgIJG/giphy.gif">
-    <br>
     {{> helloworld/lowerMessage-form }}
+    {{> helloworld/speech-form }}
     {{> helloworld/adder-form }}
     {{> helloworld/start-calc-form }}
   </body>

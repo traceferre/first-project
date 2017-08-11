@@ -27,5 +27,12 @@ public class MathsController {
 		
 		return "helloworld/sum-nothing";
 	}
+	
+	@GetMapping("start-calculator")
+	public String handleGetForCalculator() {
+		return "helloworld/calculator";
+	}
+	
+	
 
 }
